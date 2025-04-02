@@ -13,17 +13,17 @@ class SumCalculatorTest {
     }
 
     @Test
-    void testSum1() {
+    void given1_whenSum_thenReturns1() {
         assertEquals(1, calculator.sum(1));
     }
 
     @Test
-    void testSum3() {
+    void given3_whenSum_thenReturns6() {
         assertEquals(6, calculator.sum(3));
     }
 
     @Test
-    void testSum0() {
+    void given0_whenSum_thenThrowsIllegalArgumentException() {
         assertThrows(IllegalArgumentException.class, () -> calculator.sum(0));
     }
 }
